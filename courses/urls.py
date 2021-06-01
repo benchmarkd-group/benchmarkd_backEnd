@@ -1,7 +1,10 @@
 from django.conf.urls import url
+from django.urls.conf import path
 
 from . import views
 
 urlpatterns = [
-    url(r'^$', views.CourseView.as_view()),
+    path('', views.CourseView.as_view()),
+    path('<str:course_id_val>', views.CourseDetailAPIView.as_view()),
+
 ]

@@ -20,7 +20,7 @@ from django.conf.urls import url,include
 
 urlpatterns = [
     # path('admin/', admin.site.urls),
-    url(r'^courses/', include('courses.urls')),
-    path('institutes/', include('institutes.urls')), 
-    
+    path('courses/', include('courses.urls')),
+    path('institutes/', include('institutes.urls')),
+    path('exams/', include('common.urls')),
 ]

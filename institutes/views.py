@@ -19,8 +19,8 @@ class InstituteAPIView(APIView):
 
 class InstituteDetailAPIView(APIView):
 
-    def get(self, request, insti_name_val):
-        serializer = InstiSerializer(Institute.objects(insti_name = insti_name_val), many=True)
+    def get(self, request, insti_id_val):
+        serializer = InstiSerializer(Institute.objects(insti_id = insti_id_val), many=True)
         response = {"institute": serializer.data}
         return Response(response, status=status.HTTP_200_OK)
 
