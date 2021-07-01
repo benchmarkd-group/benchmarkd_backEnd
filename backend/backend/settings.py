@@ -26,7 +26,7 @@ SECRET_KEY = '$1#&etqg=pplkvdw&-+g-d%71scgzx=-fe2bx=2n2ixyut!_&f'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['backendtest-env.eba-a4mwkmhv.ap-south-1.elasticbeanstalk.com']
 
 
 # CACHES = {
